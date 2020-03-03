@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        LOGIN
+    </title>
+</head>
+
+<body bgcolor="blue">
+
+    <form name="login">
+
+        <table align="center" style="background-color:cornsilk;padding: 50px;margin-top:150px;height: 400px;width: 500px">
+            <tr>
+                <td align="center">
+                    <h1>LOGIN PAGE</h1>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <h3> Email address</h3>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="t1" placeholder="Enter email"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Password</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="password" name="p1" placeholder="Password">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Submit" onclick="check(login)" style="background-color: blue;color: white;border: blue;font-size: 20px"></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+        function check(login) {
+
+            if (login.t1.value == "computer" && login.p1.value == "science") {
+                window.open("successful.html");
+            } else {
+                alert("username or password incorrect");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
